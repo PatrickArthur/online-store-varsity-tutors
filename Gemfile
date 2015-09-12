@@ -28,6 +28,7 @@ gem 'pry'
 gem 'sidekiq'
 gem 'sinatra', require: false
 gem 'devise'
+gem 'role_model'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -39,7 +40,7 @@ gem 'devise'
 
 group :development, :test do
   gem 'dotenv-rails'
-  gem 'shoulda-matchers'
+  gem 'minitest_should'
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'launchy'

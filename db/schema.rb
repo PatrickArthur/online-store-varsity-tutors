@@ -30,12 +30,13 @@ ActiveRecord::Schema.define(version: 20150912181823) do
     t.string   "last_name",              limit: 255
     t.string   "city",                   limit: 255
     t.string   "state",                  limit: 255
+    t.string   "country",                limit: 255
+    t.string   "address",                limit: 255
     t.integer  "zip_code",               limit: 4
-    t.integer  "phone_number_primary",   limit: 4
-    t.integer  "phone_number_secondary", limit: 4
-    t.boolean  "terms_of_service",       limit: 1,   default: false
-    t.boolean  "age_verification",       limit: 1,   default: false
-    t.string   "role",                   limit: 255
+    t.string   "phone_number_primary",   limit: 255
+    t.string   "phone_number_secondary", limit: 255
+    t.boolean  "terms_of_service",       limit: 1,   default: false, null: false
+    t.boolean  "age_verification",       limit: 1,   default: false, null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
