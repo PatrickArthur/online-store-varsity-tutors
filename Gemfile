@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'twitter-bootstrap-rails'
 gem 'pry'
+gem 'sidekiq'
+gem 'sinatra', require: false
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
