@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    (@user.valid?) ? (new_user_valid?) : (new_user_not_valid?)
+    (@user.save) ? (new_user_valid?) : (new_user_not_valid?)
   end
 
   private
