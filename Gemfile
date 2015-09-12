@@ -29,6 +29,7 @@ gem 'sidekiq'
 gem 'sinatra', require: false
 gem 'devise'
 gem 'role_model'
+gem 'email_validator'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

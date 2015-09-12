@@ -14,12 +14,19 @@ FactoryGirl.define do
     sequence :email do |i|
       "sue#{i}@example.com"
     end
-    terms_of_service false
-    age_verification false
+    terms_of_service true
+    age_verification true
   end
 
   after(:create) do |u|
     u.roles << :customer
     u.save!
+  end
+
+  trait :admin do
+    after(:create) do |admin|
+      admin.roles << :admin
+      admin.save!
+    end
   end
 end
