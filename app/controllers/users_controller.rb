@@ -1,3 +1,4 @@
+# users controller
 class UsersController < ApplicationController
   before_filter :authenticate_user!
 
@@ -35,6 +36,4 @@ class UsersController < ApplicationController
     flash[:alert] = 'Errors, not registered'
     render action: 'new'
   end
-
-
 end
