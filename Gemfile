@@ -43,7 +43,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'pry-rails'
-  gem 'rspec-rails'
+  gem 'minitest-rails'
   gem 'valid_attribute'
 end
 
