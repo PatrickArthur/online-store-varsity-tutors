@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :user do
     first_name "Sue"
-    sequence(:last_name) {|i| "Sella the #{i.ordinalize}" }
+    sequence(:last_name) {|i| "Patrick #{i.ordinalize}" }
     password "password1"
     city 'Bronx'
     state 'NY'
@@ -11,9 +11,7 @@ FactoryGirl.define do
     address '104 Who Cares Lane'
     country 'italy'
     password_confirmation "password1"
-    sequence :email do |i|
-      "sue#{i}@example.com"
-    end
+    sequence(:email) {|i| "{i}@example.com" }
     terms_of_service true
     age_verification true
   end

@@ -34,13 +34,6 @@ describe User do
     end
   end
 
-  describe 'email validation' do
-    it 'user has correct email format' do
-      user.email = 'pa'
-      expect(user.valid?).must_equal(false)
-    end
-  end
-
   describe 'terms and age validation' do
     it 'user has has terms checked' do
       user.terms_of_service = nil

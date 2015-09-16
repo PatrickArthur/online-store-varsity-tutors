@@ -51,6 +51,10 @@ group :development, :test do
 end
 
 group :test do
+  gem 'database_cleaner'
+  gem 'warden-rspec-rails'
+  gem 'minitest-around'
+  gem 'm', '~> 1.3.1'
   gem 'coveralls', require: false
 end
 
