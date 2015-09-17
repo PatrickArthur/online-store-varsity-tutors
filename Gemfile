@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 
@@ -30,6 +31,7 @@ gem 'sinatra', require: false
 gem 'devise'
 gem 'role_model'
 gem 'email_validator'
+gem 'pusher'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
