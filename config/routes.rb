@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'carts/show'
+
+  get 'order_items/create'
+
+  get 'order_items/update'
+
+  get 'order_items/destroy'
+
+  get 'products/index'
+
   require 'sidekiq/web'
   # ...
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
