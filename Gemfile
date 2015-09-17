@@ -27,6 +27,9 @@ gem 'twitter-bootstrap-rails'
 gem 'pry'
 gem 'sidekiq'
 gem 'sinatra', require: false
+gem 'devise'
+gem 'role_model'
+gem 'email_validator'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,7 +41,7 @@ gem 'sinatra', require: false
 
 group :development, :test do
   gem 'dotenv-rails'
-  gem 'shoulda-matchers'
+  gem 'minitest_should'
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'launchy'
@@ -48,6 +51,10 @@ group :development, :test do
 end
 
 group :test do
+  gem 'database_cleaner'
+  gem 'warden-rspec-rails'
+  gem 'minitest-around'
+  gem 'm', '~> 1.3.1'
   gem 'coveralls', require: false
 end
 
