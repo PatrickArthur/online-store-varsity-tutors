@@ -18,9 +18,8 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :address, :city,
-                                 :state, :country, :zipcode, :phone_number_primary, :phone_number_secondary,
-                                 :terms_of_service, :age_verification)
+    params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :city,
+                                 :state, :country, :zipcode)
   end
 
   def new_user_valid?

@@ -5,25 +5,59 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.text_field :email, autofocus: true %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.label :first_name %><br />
+      <%= f.text_field :last_name, autofocus: true %>
+    </div>
+    <div class="col-md-6">
+      <%= f.label :last_name %><br />
+      <%= f.text_field :last_name, autofocus: true %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.label :city %><br />
+      <%= f.text_field :city, autofocus: true %>
+    </div>
+    <div class="col-md-6">
+      <%= f.label :state %><br />
+      <%= f.text_field :state, autofocus: true %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.label :country %><br />
+      <%= f.text_field :country, autofocus: true %>
+    </div>
+    <div class="col-md-6">
+      <%= f.label :zip_code %><br />
+      <%= f.text_field :zip_code, autofocus: true %>
+    </div>
   </div>
-<% end %>
+
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+    <div class="col-md-6">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+  </div></br>
+
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+    <% end %>
 
 <%= render "devise/shared/links" %>

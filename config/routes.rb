@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   require 'sidekiq/web'
   # ...
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout", registrations: "registrations"}
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
 
   root to: "products#index"
 
